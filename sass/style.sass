@@ -1,0 +1,85 @@
+@import variables
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    font-size: 10px
+
+body
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $off-black
+    color: $white
+    font-size: 1.4rem
+    font-family: "Inter", sans-serif
+    height: 100vh
+
+.profile
+    background-color: $dark-grey
+    border-radius: 15px
+    width: 400px
+    padding: 40px
+
+.profile__avatar
+    display: block
+    border-radius: 50%
+    width: 95px
+    margin: 0 auto
+
+.profile__name
+    margin-top: 30px
+    font-size: 2.4rem
+    text-align: center
+
+.profile__city
+    margin-top: 12px
+    text-align: center
+    color: $green
+    font-weight: 700
+
+.profile__description
+    margin: 30px 0 25px 0
+    text-align: center
+
+.profile__btn
+    display: block
+    margin: 15px auto 0 auto
+    border: none
+    background-color: $grey
+    color: $white
+    width: 100%
+    height: 47px
+    font-weight: 700
+    border-radius: 10px
+    cursor: pointer
+    transition: color .3s, background-color .3s
+
+.profile__btn:hover
+   color: $off-black
+   background-color: $green 
+
+.attribution
+    position: absolute
+    bottom: 5px
+    font-size: 1rem
+
+@media (max-width: 450px)
+    body
+        display: block
+        margin: 30px auto 0 auto
+
+    .profile
+        margin: 0 auto
+        width: 90%
+        padding: 25px
+
+    .attribution
+        margin-top: 20px
+        position: static
+        text-align: center
+    
